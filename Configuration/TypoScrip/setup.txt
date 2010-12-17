@@ -1,0 +1,5 @@
+plugin.tx_f2rdfa.settings {
+	person {
+
+	}
+}
