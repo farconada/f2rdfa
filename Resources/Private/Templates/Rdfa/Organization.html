@@ -1,0 +1,21 @@
+<h1>Organization View</h1>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Organization"> 
+   <span property="v:name">{name}</span><br />
+   Dirección:<br />
+   <div rel="v:address">
+      <div typeof="v:Address">
+         <span property="v:street-address">{street-address}</span>,<br />
+         <span property="v:locality">{locality}</span>,<span property="v:postal-code">{postal-code}</span><br />
+         <span property="v:region">{region}</span>,<br />
+         <span property="v:country-name">{country-name}</span>.<br />
+      </div>
+   </div>
+   <div rel="v:geo">
+      <span typeof="v:Geo">
+         <span property="v:latitude" content="{latitude}"></span>
+         <span property="v:longitude" content="{longitude}"></span>
+      </span>
+   </div>
+   Teléfono: <span property="v:tel">{tel}</span><br />
+   <a href="{url}" rel="v:url">{url}</a>
+</div>

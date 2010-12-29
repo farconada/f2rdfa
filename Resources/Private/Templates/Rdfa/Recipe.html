@@ -1,0 +1,25 @@
+<h1>Recipe View</h1>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Recipe">
+   <h1 property="v:name">{name}</h1><br />
+   por <span property="v:author">{author}</span>,<br />
+   Publicado: <span property="v:published" content="{published}">{published}</span><br />
+   <span property="v:summary">{summary}</span><br />
+   Tiempo preparación: <span property="v:prepTime" content="{prepTime}">{prepTime}</span><br />
+   Tiempo cocinar: <span property="v:cookTime" content="{cookTime}">{cookTime}</span><br />
+   Tiempo total: <span property="v:totalTime" content="{totalTime}">{totalTime}</span><br />
+   Personas/Porciones: <span property="v:yield">{yield}</span><br />
+   <br />
+   Valor nutricional:<br />
+   <span rel="v:nutrition">
+      <span typeof="v:Nutrition"> 
+        Porción: <span property="v:servingSize">{servingSize}</span><br />
+        Calorías: <span property="v:calories">{calories}</span><br />
+        Peso: <span property="v:fat">{fat}</span><br />
+      </span>
+   </span>
+   <br />
+   Instrucciones:<br />
+   <div property="v:instructions">
+   {instructions}
+   </div>
+</div>

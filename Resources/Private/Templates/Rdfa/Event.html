@@ -1,0 +1,24 @@
+<h1>Event View</h1>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event"> 
+  <a href="{url}" rel="v:url" property="v:summary">{summary}</a><br /> 
+  <span property="v:description">{description}</span><br />
+  Cuando:<br />
+  <span property="v:startDate" content="{startDate}">{startDate}</span>-
+  <span property="v:endDate" content="{endDate}">{endDate}</span><br />
+
+  Donde:<br /> 
+  <span rel="v:location">
+    <span typeof="v:Organization">
+      <span property="v:name">{name}</span>,<br />
+      
+      <span rel="v:geo">
+        <span typeof="v:Geo">
+          <span property="v:latitude" content="{latitude}" ></span>
+          <span property="v:longitude" content="{longitude}" ></span>
+        </span>
+      </span>
+    </span>   
+  </span>
+
+  Categoría: <span property="v:eventType">{eventType}</span>
+</div>

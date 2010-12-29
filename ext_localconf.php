@@ -17,6 +17,39 @@ Tx_Extbase_Utility_Extension::configurePlugin(
     )
 );
 
+Tx_Extbase_Utility_Extension::configurePlugin(
+    $_EXTKEY,
+    'Event',
+    array(
+        'Rdfa' => 'event',
+    ),
+    array(
+        'Rdfa' => 'event',
+    )
+);
+
+Tx_Extbase_Utility_Extension::configurePlugin(
+    $_EXTKEY,
+    'Organization',
+    array(
+        'Rdfa' => 'organization',
+    ),
+    array(
+        'Rdfa' => 'organization',
+    )
+);
+
+Tx_Extbase_Utility_Extension::configurePlugin(
+    $_EXTKEY,
+    'Recipe',
+    array(
+        'Rdfa' => 'recipe',
+    ),
+    array(
+        'Rdfa' => 'recipe',
+    )
+);
+
 
 
 // Preview del plugin en la vista de lista

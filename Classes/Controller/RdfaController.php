@@ -80,6 +80,64 @@ class Tx_F2rdfa_Controller_RdfaController extends Tx_Extbase_MVC_Controller_Acti
         $this->view->assign('postal-code', $this->settings['postal-code']);
         $this->view->assign('country-name', $this->settings['country-name']);
     }
+    
+    /**
+     * Eventos
+     *
+     * @return html generado por la vista
+     */
+    public function eventAction() {
+        $this->view->assign('summary', $this->settings['summary']);
+        $this->view->assign('url', $this->settings['url']);
+        $this->view->assign('location', $this->settings['location']);
+        $this->view->assign('description', $this->settings['description']);
+        $this->view->assign('startDate', $this->settings['startDate']);
+        $this->view->assign('endDate', $this->settings['endDate']);
+        $this->view->assign('duration', $this->settings['duration']);
+        $this->view->assign('eventType', $this->settings['eventType']);
+        $this->view->assign('name', $this->settings['name']);
+        $this->view->assign('latitude', $this->settings['latitude']);
+        $this->view->assign('longitude', $this->settings['longitude']);
+    }
+    
+    /**
+     * Organizaciones
+     *
+     * @return html generado por la vista
+     */
+    public function organizationAction() {
+        $this->view->assign('name', $this->settings['name']);
+        $this->view->assign('url', $this->settings['url']);
+        $this->view->assign('street-address', $this->settings['street-address']);
+        $this->view->assign('locality', $this->settings['locality']);
+        $this->view->assign('region', $this->settings['region']);
+        $this->view->assign('postal-code', $this->settings['postal-code']);
+        $this->view->assign('country-name', $this->settings['country-name']);
+        $this->view->assign('tel', $this->settings['tel']);
+        $this->view->assign('latitude', $this->settings['latitude']);
+        $this->view->assign('longitude', $this->settings['longitude']);
+    }
+    
+    /**
+     * Recetas
+     *
+     * @return html generado por la vista
+     */
+    public function recipeAction() {
+        $this->view->assign('name', $this->settings['name']);
+        $this->view->assign('recipeType', $this->settings['recipeType']);
+        $this->view->assign('published', $this->settings['published']);
+        $this->view->assign('summary', $this->settings['summary']);
+        $this->view->assign('prepTime', $this->settings['prepTime']);
+        $this->view->assign('cookTime', $this->settings['cookTime']);
+        $this->view->assign('totalTime', $this->settings['totalTime']);
+        $this->view->assign('servingSize', $this->settings['servingSize']);
+        $this->view->assign('calories', $this->settings['calories']);
+        $this->view->assign('fat', $this->settings['fat']);
+        $this->view->assign('instructions', $this->settings['instructions']);
+        $this->view->assign('yield', $this->settings['yield']);
+        $this->view->assign('author', $this->settings['author']);
+    }
 
 
     /**
